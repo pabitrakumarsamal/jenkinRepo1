@@ -1,2 +1,2 @@
 import streamlit as st 
-st.writr('welcoime to homw')
+st.write('welcoime to homw')
