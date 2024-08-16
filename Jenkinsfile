@@ -1,5 +1,9 @@
 pipeline{
-    agent any
+    agent {
+        node {
+            label 'jenkinLabel'
+        }
+    }
     stages{
         stage("checkout stge"){
             steps{
