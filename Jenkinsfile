@@ -10,12 +10,6 @@ pipeline{
                 git url:'https://github.com/pabitrakumarsamal/jenkinRepo1.git',branch:'main'
             }
         }
-        stage("replace"){
-            steps{
-                sh 'docker rm -f $(docker ps -aq)'
-                sh 'docker rmi -f myimage111'
-            }
-        }
         stage("create image"){
             steps{
                 sh 'docker build -t myimage .'
